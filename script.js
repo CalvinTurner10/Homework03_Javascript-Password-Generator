@@ -38,7 +38,7 @@ function generatePassword() {
 
  
   var length = 0
-  while ((length < 8 || length > 128 ) || Number.isInteger(length)=== true){
+  while ((length<8 || length > 128 ) || Number.isInteger(length)=== true){
    var length = prompt("Chose a number between 8 to 128 chararcter"); // The prompts the generate the password
   }
 
