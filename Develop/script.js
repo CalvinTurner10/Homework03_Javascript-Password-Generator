@@ -17,16 +17,27 @@
 
 
 // Assignment Code
-var generateBtn = document.querySelector("#generate");
+// var generateBtn = document.querySelector("#generate");
+const specialCharacters = "!#$%&'()*+,-./:;<=>?@{^_`{|}~";
+const generateButton = document.getElementById('generateBtn')
+// Add event listener to generate button
+generateBtn.addEventListener("click", writePassword);
 
 
 
 //define the password generator button.
 function generatePassword(){
   var passwordCharSet = "";
-  var length = window.prompt("Enter a number from 8 to 128 for the password length")
+  var length = prompt("Enter a number from 8 to 128 for the password length");
 
+  var lowercase = confirm("Would you like to add a lower case letter?");
 
+  var uppercase = confirm("Would you like to add a uppercase letter?");
+  
+  var symbol = confirm("Would you like to add a symbol?");
+  
+  var numbers = confirm("Would you like to add numbers?");
+  
 }
 
 // Write password to the #password input
@@ -38,5 +49,4 @@ function writePassword() {
 
 }
 
-// Add event listener to generate button
-generateBtn.addEventListener("click", writePassword);
+
