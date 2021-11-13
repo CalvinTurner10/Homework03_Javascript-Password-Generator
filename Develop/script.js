@@ -18,8 +18,13 @@
 
 // Assignment Code
 var generateBtn = document.querySelector("#generate");
+
+
+
 //define the password generator button.
 function generatePassword(){
+  var passwordCharSet = "";
+  var length = window.prompt("Enter a number from 8 to 128 for the password length")
 
 
 }
