@@ -27,8 +27,8 @@ generateBtn.addEventListener("click", writePassword);
 
 //define the password generator button.
 function generatePassword(){
-  var passwordCharSet = "";
-  var length = prompt("Enter a number from 8 to 128 for the password length");
+ 
+  var length = prompt("Enter a number from 8 to 128 for the password length"); // The prompts the generate the password
 
   var lowercase = confirm("Would you like to add a lower case letter?");
 
@@ -36,7 +36,24 @@ function generatePassword(){
   
   var symbol = confirm("Would you like to add a symbol?");
   
+  
   var numbers = confirm("Would you like to add numbers?");
+  
+  var minCount =0; // min count for all ther characters
+
+  var minLowercase = "";
+  var minUppercase = "";
+  var minSymbol = "";
+  var minNumbers = "";
+
+  var functionArray = {
+    getNumbers:function(){
+      return String.fromCharCode(Math.floor(Math.random() * 10 +48));
+      
+    }
+
+
+
   
 }
 
