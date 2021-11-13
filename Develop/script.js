@@ -78,7 +78,7 @@ function generatePassword() {
 
 
   };
-// condition statements for the passwork match up.
+// condition statements for the password match up. This make sure the ok is selected in the prompts.
   if (lowercase === true) {
     minLowercase = functionArray.getLowercase();
     minCount++;
@@ -107,7 +107,7 @@ function generatePassword() {
 
     randomPasswordGenerated += randomNumberPicked;
   }
-  randomPasswordGenerated += minLowercase;
+  randomPasswordGenerated += minLowercase; // combines the characters
   randomPasswordGenerated += minUppercase;
   randomPasswordGenerated += minSymbolCharacters;
   randomPasswordGenerated += minNumbers;
